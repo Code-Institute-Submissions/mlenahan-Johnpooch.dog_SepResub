@@ -23,17 +23,13 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def number_of_likes(self):
-        return self.likes.count()
-
-
 class Tag(models.Model):
     name = models.CharField(max_length=80)
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["created_at"]
 
     def __str__(self):
         return self.name
@@ -41,4 +37,5 @@ class Tag(models.Model):
 class SiteSettings(models.Model):
     title = models.CharField(max_length=200, unique=True)
     sub_title = models.CharField(max_length=100, unique=True)
-    social_media_links = models.URLField(max_length=128, db_index=True, unique=True, blank=True)
+    linkedin = models.URLField(max_length=128, db_index=True, unique=True, blank=True)
+    github = models.URLField(max_length=128, db_index=True, unique=True, blank=True)
