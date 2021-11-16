@@ -3,7 +3,7 @@ from blog import models
 
 class PostTestCase(TestCase):
     def setUp(self):
-        Post.objects.create(title='python')
+        pass
 
     def test_create_post(self):
         post = Post.objects.create(title='python')
@@ -33,7 +33,9 @@ class PostTestCase(TestCase):
 
     def test_str(self):
         # create post then call str(post) and check that its the same as post.title
-        pass
+        post = Post.objects.create(title='python')
+        str_post = Post.__str__()
+        self.assertEqual(post.title, str_post)
 
     def test_publish(self):
         # add method to post called publish which should set published at to now
@@ -48,6 +50,10 @@ class PostTestCase(TestCase):
         # create many-to-many relationship(add to post)
         # create a post, create a tag
         # then do post.tags.add(tag)
+        post = Post.objects.create(title='python')
+        tag = Tag.objects.create(title='flask')
+        post_with_tag = post.tags.add('flask')
+        self.assertEqual
         pass
 
     def test_get_tags(self):

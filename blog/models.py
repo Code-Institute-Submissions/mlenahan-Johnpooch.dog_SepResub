@@ -6,6 +6,15 @@ from django.utils.text import slugify
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+class Tag(models.Model):
+    name = models.CharField(max_length=80)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ["created_at"]
+
+    def __str__(self):
+        return self.name
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -17,6 +26,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     published_at = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    tags = models.ManyToManyField(Tag)
     
     class Meta:
         ordering = ["created_at"]
@@ -28,16 +38,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Tag(models.Model):
-    name = models.CharField(max_length=80)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
 
-    class Meta:
-        ordering = ["created_at"]
-
-    def __str__(self):
-        return self.name
 
 class SiteSettings(models.Model):
     title = models.CharField(max_length=200, unique=True)
