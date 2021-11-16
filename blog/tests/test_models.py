@@ -3,13 +3,16 @@ from blog import models
 
 class PostTestCase(TestCase):
     def setUp(self):
-        pass
+        Post.objects.create(title='python')
 
     def test_create_post(self):
-        pass
+        post = Post.objects.create(title='python')
+        self.assertEqual(post, Post)
 
     def test_created_at_auto_now_add(self):
         # just test that it is a date
+        post = Post.objects.create(title='python')
+        self.assertEqual(post.DateTimeField, DateTimeField)
         pass
 
     def test_updated_at_auto_now(self):
