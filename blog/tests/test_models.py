@@ -13,7 +13,6 @@ class PostTestCase(TestCase):
         # just test that it is a date
         post = Post.objects.create(title='python')
         self.assertEqual(post.DateTimeField, DateTimeField)
-        pass
 
     def test_updated_at_auto_now(self):
         # changes anytime its saved
@@ -52,11 +51,12 @@ class PostTestCase(TestCase):
         # then do post.tags.add(tag)
         post = Post.objects.create(title='python')
         tag = Tag.objects.create(title='flask')
-        post_with_tag = post.tags.add('flask')
-        self.assertEqual
-        pass
+        post.tags.add('flask')
+        self.assertEqual(post.tags, 'flask')
 
     def test_get_tags(self):
-        # do same as above but then do post.tags.get()
-        # check that tag is a tag
+        post = Post.objects.create(title='python')
+        tag = Tag.objects.create(title='flask')
+        post.tags.add('flask')
+        self.assertEqual(post.tags, tag)
         pass
