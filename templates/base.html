@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <title>John's Dev Blog</title>
+    <title>{{ site_settings.title}}</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <div>
                 <ul>
                     <li>
-                        <a aria-current="page" href="{% url 'home' %}">John's Dev Blog</a>
+                        <a aria-current="page" href="{% url 'home' %}">{{ site_settings.title}}</a>
                     </li>
                 </ul>
             </div>
@@ -42,10 +42,10 @@
             </p>
         </div>
     </div>
-    <footer >
+    <footer>
             <div>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
+                <a href="{{ site_settings.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="{{ site_settings.github }}" target="_blank"><i class="fab fa-github"></i></a>
             </div>
     </footer>
 </body>

@@ -6,10 +6,10 @@
             <div>
                 <h1>{{ post.title }}</h1>
                 <div class="post-meta">
-                    <p class="created-at">{{ post.created_at }}</p>
+                    <p class="created-at">{{ post.created_at|date:"d M Y" }}</p>
                     <div class="socials">
-                        <a href="{{ site_settings.linkedin_url }}"><i class="fab fa-linkedin"></i></a>
-                        <a href="{{ site_settings.github_url }}"><i class="fab fa-github"></i></a>
+                        <a href="{{ site_settings.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="{{ site_settings.github }}" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -23,6 +23,13 @@
             <div class="content">
                 <p>{{ post.excerpt | safe }}</p>
                 {{ post.content | safe }}
+            </div>
+            <div class="tags">
+                {% for tag in tags %}
+                <span>
+                    {{ tag.name }}
+                </span>
+                {% endfor %}
             </div>
         </div>
     </div>
