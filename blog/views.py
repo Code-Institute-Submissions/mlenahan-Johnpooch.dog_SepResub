@@ -9,6 +9,11 @@ class PostList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 6
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['site_settings'] = SiteSettings.objects.get()
+        return context
+
 
 class PostDetail(View):
 

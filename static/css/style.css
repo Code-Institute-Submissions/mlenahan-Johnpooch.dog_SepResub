@@ -55,12 +55,16 @@ body {
     padding-top: 32px;
  }
 
- .container > div {
-    max-width: 680px;
+ .post-preview h2 {
+    font-family: var(--primary-font);
  }
 
- .content {
+ .post-preview p {
+   font-family: var(--secondary-font);
+}
 
+ .container > div {
+    max-width: 680px;
  }
 
  .content p {
@@ -133,4 +137,33 @@ body {
     padding: 0 8px;
     border-radius: 4px;
     padding-top: 4px;
+ }
+
+.summary-container {
+   font-family: var(--primary-font);
+   padding-bottom: 32px;
+}
+
+ .summary-container a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .summary-container p {
+    font-family: var(--secondary-font);
+ }
+
+ .summary-container:not(:last-of-type) {
+   border-bottom: solid var(--border-thickness) var(--border-color);
+   margin-bottom: 64px;
+ }
+
+ .summary-container .image-container {
+    max-height: 450px;
+    overflow: hidden;
+    margin: 32px 0px;
+ }
+
+ .summary-container .image-container img {
+    min-width: 100%;
  }
