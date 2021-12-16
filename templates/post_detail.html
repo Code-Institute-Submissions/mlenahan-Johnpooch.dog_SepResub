@@ -21,7 +21,7 @@
             </div>
             <div class="content">
                 <p>{{ post.excerpt | safe }}</p>
-                {{ post.content | safe }}
+                {{ post.parsed_content | safe }}
             </div>
             <div class="tags">
                 {% for tag in tags %}

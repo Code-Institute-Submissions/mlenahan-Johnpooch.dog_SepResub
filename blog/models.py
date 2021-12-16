@@ -1,3 +1,4 @@
+import re
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
@@ -38,6 +39,18 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def parsed_content(self):
+        # regex to find escaped gist scripts
+        gist_script_regex = "&lt;script src=\"(https:\/\/gist\.github\.com\/johnpooch\/.*)\"&gt;&lt;\/script&gt;"
+        pattern = re.compile(gist_script_regex, re.S)
+        # replace all escaped gist scripts with non-escaped scripts
+        subbed = re.sub(pattern, r'<script src=\1></script>', self.content)
+        code_snippet_regex = '`(.*)`'
+        pattern = re.compile(code_snippet_regex, re.S)
+        # replace all back-tick code snippets with span
+        subbed = re.sub(pattern, r'<span class="inline-code-snippet">\1</span>', subbed)
+        return subbed
 
 
 class SiteSettings(models.Model):

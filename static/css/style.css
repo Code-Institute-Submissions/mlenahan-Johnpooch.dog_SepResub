@@ -167,3 +167,10 @@ body {
  .summary-container .image-container img {
     min-width: 100%;
  }
+
+ .inline-code-snippet {
+   padding: 2px;
+   font-family: Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
+   background-color: rgb(242, 242, 242);
+   font-size: 75%;
+ }
