@@ -174,3 +174,27 @@ body {
    background-color: rgb(242, 242, 242);
    font-size: 75%;
  }
+
+ @media only screen and (max-width: 900px) {
+    .pre-footer {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+   
+ }
+
+ @media only screen and (max-width: 750px) {
+   .container {
+     padding-left: 32px;
+     padding-right: 32px;
+   }
+  
+}
+
+@media only screen and (max-width: 550px) {
+   .container {
+     padding-left: 64px;
+     padding-right: 64px;
+   }
+  
+}
