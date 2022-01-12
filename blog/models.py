@@ -31,7 +31,7 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     
     class Meta:
-        ordering = ["created_at"]
+        ordering = ["-created_at"]
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
