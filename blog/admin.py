@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Tag, SiteSettings
+from .models import Tag, Post, SiteSettings, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -22,8 +22,16 @@ class TagAdmin(admin.ModelAdmin):
 
 
 @admin.register(SiteSettings)
-class TagAdmin(admin.ModelAdmin):
+class SiteSettingsAdmin(admin.ModelAdmin):
 
     list_display = ('title', 'sub_title', 'linkedin', 'github')
     search_fields = ['title', 'sub_title', 'linkedin', 'github']
     list_filter = ('sub_title', 'linkedin', 'github')
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+
+    list_display = ('post', 'name', 'created_at')
+    search_fields = ['post', 'name']
+    list_filter = ('post', 'name', 'created_at')
