@@ -30,6 +30,29 @@
                 </span>
                 {% endfor %}
             </div>
+            <div>
+                {% with comments.count as total_comments %}
+                <strong><i class="far fa-comments"></i>
+                    {{ total_comments }}</strong>
+                {% endwith %}
+            </div>
+            <div>
+                <div>
+                    <h3>Comments:</h3>
+                    <div>
+                        {% for comment in comments %}
+                        <div>
+                            <p>
+                                {{ comment.name }}
+                                <span>
+                                    {{ comment.created_on }}
+                                </span> wrote:
+                            </p>
+                            {{ comment.body | linebreaks }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
         </div>
     </div>
 </div>

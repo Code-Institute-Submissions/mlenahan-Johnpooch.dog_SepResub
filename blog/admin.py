@@ -32,8 +32,8 @@ class SiteSettingsAdmin(admin.ModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 
-    list_display = ('name', 'body', 'post', 'created_on', 'approved')
-    list_filter = ('approved', 'created_on')
+    list_display = ('name', 'body', 'post', 'created_at', 'approved')
+    list_filter = ('approved', 'created_at')
     search_fields = ('name', 'email', 'body')
     actions = ['approve_comments']
 

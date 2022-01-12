@@ -21,6 +21,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         site_settings = SiteSettings.objects.get()
+        comments = post.comments.filter(approved=True).order_by('created_at')
         tags = post.tags.all()
 
         return render(
@@ -29,6 +30,7 @@ class PostDetail(View):
             {
                 'post': post,
                 'site_settings': site_settings,
+                'comments': comments,
                 'tags': tags,
             },
         )
