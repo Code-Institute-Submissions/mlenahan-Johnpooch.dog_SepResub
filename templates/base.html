@@ -23,12 +23,18 @@
                     <li>
                         <a aria-current="page" href="{% url 'home' %}">{{ site_settings.title}}</a>
                     </li>
-                        <li class="login">
-                            <a href="#">Login</a>
-                        </li>
-                        <li class="register">
-                            <a href="#">Register</a>
-                        </li>
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="login">
+                        <a href="{% url 'account_signup' %}">Login</a>
+                    </li>
+                    <li class="register">
+                        <a href="{% url 'account_login' %}">Register</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
