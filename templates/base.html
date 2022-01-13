@@ -17,12 +17,12 @@
 
 <body>
     <nav>
-        <div>
-            <div>
                 <ul>
                     <li>
                         <a aria-current="page" href="{% url 'home' %}">{{ site_settings.title}}</a>
                     </li>
+                </ul>
+                <ul>
                     {% if user.is_authenticated %}
                     <li>
                         <a href="{% url 'account_logout' %}">Logout</a>
@@ -36,14 +36,13 @@
                     </li>
                     {% endif %}
                 </ul>
-            </div>
-        </div>
     </nav>
 
     <main>
         {% block content %}
         {% endblock content %}
     </main>
+    {% if user.is_authenticated %}
     <div class="pre-footer">
         <div>
             <p class="about">
@@ -54,6 +53,7 @@
             </p>
         </div>
     </div>
+    {% endif %}
     <footer>
             <div>
                 <a href="{{ site_settings.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
