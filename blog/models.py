@@ -30,6 +30,20 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     tags = models.ManyToManyField(Tag, blank=True)
     
+    @property
+    def parsed_content(self):
+        # regex to find escaped gist scripts
+        gist_script_regex = "&lt;script src=\"(https:\/\/gist\.github\.com\/johnpooch\/.*)\"&gt;&lt;\/script&gt;"
+        pattern = re.compile(gist_script_regex, re.S)
+        # replace all escaped gist scripts with non-escaped scripts
+        subbed = re.sub(pattern, r'<script src=\1></script>', self.content)
+        code_snippet_regex = '`(.*)`'
+        pattern = re.compile(code_snippet_regex, re.S)
+        # replace all back-tick code snippets with span
+        subbed = re.sub(pattern, r'<span class="inline-code-snippet">\1</span>', subbed)
+        return subbed
+
+
     class Meta:
         ordering = ["-created_at"]
 
@@ -55,20 +69,7 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
 
-    @property
-    def parsed_content(self):
-        # regex to find escaped gist scripts
-        gist_script_regex = "&lt;script src=\"(https:\/\/gist\.github\.com\/johnpooch\/.*)\"&gt;&lt;\/script&gt;"
-        pattern = re.compile(gist_script_regex, re.S)
-        # replace all escaped gist scripts with non-escaped scripts
-        subbed = re.sub(pattern, r'<script src=\1></script>', self.content)
-        code_snippet_regex = '`(.*)`'
-        pattern = re.compile(code_snippet_regex, re.S)
-        # replace all back-tick code snippets with span
-        subbed = re.sub(pattern, r'<span class="inline-code-snippet">\1</span>', subbed)
-        return subbed
-
-
+    
 class SiteSettings(models.Model):
     title = models.CharField(max_length=200, unique=True)
     sub_title = models.CharField(max_length=100, unique=True)

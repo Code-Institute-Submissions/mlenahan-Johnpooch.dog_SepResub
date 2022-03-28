@@ -1,5 +1,6 @@
 from django.test import TestCase
-from blog import models
+from blog.models import Post
+
 
 class PostTestCase(TestCase):
     def setUp(self):
@@ -59,4 +60,23 @@ class PostTestCase(TestCase):
         tag = Tag.objects.create(title='flask')
         post.tags.add('flask')
         self.assertEqual(post.tags, tag)
-        pass
+
+    def test_parsed_content_no_change_if_no_embeds_or_snippets(self):
+        post = Post.objects.create(title='python', content='Hello')
+        self.assertEqual(post.content, post.parsed_content)
+
+    def test_parsed_content_replaces_single_escaped_gist_script_with_html_script_tags(self):
+        post = Post.objects.create(title='python', content='<script src="https://gist.github.com/johnpooch/123"></script>')
+        self.assertEqual(post.content, post.parsed_content)
+
+    def test_parsed_content_replaces_multiple_escaped_gist_script_with_html_script_tags(self):
+        post = Post.objects.create(title='python', content='<script src="https://gist.github.com/johnpooch/123"></script>, <script src="https://gist.github.com/johnpooch/123"></script>')
+        self.assertEqual(post.content, post.parsed_content)
+
+    def test_parsed_content_replaces_code_snippet_with_html_tags(self):
+        post = Post.objects.create(title='python', content='`code snippet`')
+        self.assertEqual(post.content, post.parsed_content)
+    
+    def test_parsed_content_replaces_multiple_code_snippet_with_html_tags(self):
+        post = Post.objects.create(title='python', content='`code snippet`, `code snippet 2`')
+        self.assertEqual(post.content, post.parsed_content)
