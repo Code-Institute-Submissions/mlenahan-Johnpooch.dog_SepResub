@@ -4,6 +4,20 @@ from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 
 
+def unescape_gist_embeds(escaped):
+    regex = "&lt;script src=(\"https:\/\/gist\.github\.com\/johnpooch\/[^\"]*\")&gt;&lt;\/script&gt;"
+    pattern = re.compile(regex, re.S)
+    # replace all escaped gist scripts with non-escaped scripts
+    return re.sub(pattern, r'<script src=\1></script>', escaped)
+
+
+def substitute_code_snippets(text):
+    regex = '`([^`]*)`'
+    pattern = re.compile(regex, re.S)
+    # replace all back-tick code snippets with span
+    return re.sub(pattern, r'<span class="inline-code-snippet">\1</span>', text)
+
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -13,6 +27,7 @@ class Tag(models.Model):
     
     class Meta:
         ordering = ["created_at"]
+
 
     def __str__(self):
         return self.name
@@ -32,20 +47,14 @@ class Post(models.Model):
     
     @property
     def parsed_content(self):
-        # regex to find escaped gist scripts
-        gist_script_regex = "&lt;script src=\"(https:\/\/gist\.github\.com\/johnpooch\/.*)\"&gt;&lt;\/script&gt;"
-        pattern = re.compile(gist_script_regex, re.S)
-        # replace all escaped gist scripts with non-escaped scripts
-        subbed = re.sub(pattern, r'<script src=\1></script>', self.content)
-        code_snippet_regex = '`(.*)`'
-        pattern = re.compile(code_snippet_regex, re.S)
-        # replace all back-tick code snippets with span
-        subbed = re.sub(pattern, r'<span class="inline-code-snippet">\1</span>', subbed)
-        return subbed
+        parsed = unescape_gist_embeds(self.content)
+        parsed = substitute_code_snippets(parsed)
+        return parsed
 
 
     class Meta:
         ordering = ["-created_at"]
+
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
