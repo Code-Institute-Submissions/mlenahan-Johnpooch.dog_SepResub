@@ -28,9 +28,8 @@ class Tag(models.Model):
     class Meta:
         ordering = ["created_at"]
 
-
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Post(models.Model):
@@ -51,17 +50,15 @@ class Post(models.Model):
         parsed = substitute_code_snippets(parsed)
         return parsed
 
-
     class Meta:
         ordering = ["-created_at"]
 
+    def __str__(self):
+        return str(self.title)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super().save(*args, **kwargs)
-
-    def __str__(self):
-        return self.title
 
 
 class Comment(models.Model):
