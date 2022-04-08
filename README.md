@@ -52,6 +52,69 @@ This website will be a place to read about all the languages, frameworks and tec
     * I want to be able to edit and delete tags
     * I want to have to ability to give give other users admin status
     
+# Features
+
+## Existing Features
+
+- __The landing page__
+
+    ![image](media/readme_screenshots/landing.png)
+
+    - The landing page of this site is a simple one consisting of all the articles that have been written. What you will see is the image and an excerpt from the article.
+
+- __The nav bar__
+
+    ![image](media/readme_screenshots/header.png)
+
+    - This site has a simple navbar consisting of site title which acts as a home button and depending on whether you're logged in or not, a login and register button or a logout button.
+    - This is featured across all pages.
+
+- __The footer__
+
+    ![image](media/readme_screenshots/footer.png)
+
+    - This site has a simple footer consisting of social media links to John's LinkedIn and GitHub.
+    - This is featured across all pages.
+
+- __The About__
+
+    ![image](media/readme_screenshots/about.png)
+
+    - The about section is a small and concise piece about who John is and what he is interested in and what you may see feature on the blog.
+
+- __The comment section__
+
+    ![image](media/readme_screenshots/commentox.png)
+
+    - The site features a comment section that allows registered users to comment on the various posts on the site
+
+    ![image](media/readme_screenshots/commentfeedback.png)
+
+    - Once a registered user has posted a comment, they will be given feedback to show that the comment has been sent for moderation. Comments have to be approved by an admin to avoid inapropriate or unwanted comments.
+
+    ![image](media/readme_screenshots/postedcomment.png)
+
+    - Once the comment has been approved, it will be visible under the post on which it was posted.
+
+- __Custom gist and code snippets__
+
+    ![image](media/readme_screenshots/gist.png)
+
+    ![image](media/readme_screenshots/codeblock.png)
+
+    - This site uses [Django Summernote](https://github.com/summernote/django-summernote) which provides WYSIWYG editor for creating and editing blog posts. By default, Django Summernote escapes all HTML tags. This meant that embedding Gist scripts would not work as expected. To work around this, I wrote a function using the Regex library that looks for escaped gist scripts and replaces them with un-escaped script tags. Additionally, inline code-snippets are commonly added using back-ticks ("`code snippet`"). This behaviour is not natively supported by Django Summernote. To achieve this behaviour, the `parsed_content` method also replaces back-ticks with `<span>` tags that can be targeted in CSS to make them appear as code snippets. [Link to code.](https://github.com/mlenahan/ms4-django/blob/aa217116894a66741eeb9d2629f77b59cb40c5dd/blog/models.py#L48)
+
+## Features to implement
+
+- __Email post notifications__
+
+    - In the future, I would love to implement a feature that sends all registered users an email when a new article is posted. This would be a great way of letting all registered users know that a new article has been posted.
+    
+
+
+
+
+
 
 
 
