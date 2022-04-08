@@ -54,7 +54,10 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-            messages.success(request, 'Your comment has been created! It will appear once it is approved!')
+            messages.success(
+                request,
+                'Your comment has been created! It will appear once\
+                it is approved!')
             return redirect(reverse('post_detail', kwargs={'slug': slug}))
 
         return render(

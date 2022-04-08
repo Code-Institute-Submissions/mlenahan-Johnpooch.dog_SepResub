@@ -104,11 +104,34 @@ This website will be a place to read about all the languages, frameworks and tec
 
     - This site uses [Django Summernote](https://github.com/summernote/django-summernote) which provides WYSIWYG editor for creating and editing blog posts. By default, Django Summernote escapes all HTML tags. This meant that embedding Gist scripts would not work as expected. To work around this, I wrote a function using the Regex library that looks for escaped gist scripts and replaces them with un-escaped script tags. Additionally, inline code-snippets are commonly added using back-ticks ("`code snippet`"). This behaviour is not natively supported by Django Summernote. To achieve this behaviour, the `parsed_content` method also replaces back-ticks with `<span>` tags that can be targeted in CSS to make them appear as code snippets. [Link to code.](https://github.com/mlenahan/ms4-django/blob/aa217116894a66741eeb9d2629f77b59cb40c5dd/blog/models.py#L48)
 
+- __Authorisation__
+
+    ![image](media/readme_screenshots/signup.png)
+
+    - The site currently allows users to register for an account. Registering for an account will let users comment on individual articles.
+
+    ![image](media/readme_screenshots/signin.png)
+
+    - Registered users can sign into their accounts at this page. They can also sign out.
+
+    ![image](media/readme_screenshots/passwordreset.png)
+
+    - If a user has forgotten their password, they can reset it here.
+
+    ![image](media/readme_screenshots/passwordresetconfirmation.png)
+
+    - Users will recieve confirmation that an email has been sent to them for resetting their password.
+
+
 ## Features to implement
 
 - __Email post notifications__
 
     - In the future, I would love to implement a feature that sends all registered users an email when a new article is posted. This would be a great way of letting all registered users know that a new article has been posted.
+
+- __Password reset__
+
+    - Currently the password reset function doesn't actually send and email to reset your password so this is a feature I defintely want to add in the future.
     
 
 
