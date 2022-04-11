@@ -56,3 +56,16 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
         
         ![image](media/testing_screenshots/viewspy.png)
 
+-   ## Unit Testing 
+
+    - I made the decision to unit test two functions in my project. `unescape_gist_embeds` and `substitute_code_snippets` in the `models.py` file. I decided that it is essential to ensure these functions work as intended as this site is a developer blog and will include many gists and code snippets.
+
+        - To run the tests, enter the command `python3 manage.py test blog/tests` into your terminal/command line.
+
+## Bugs
+
+-   ### Fixed Bugs
+
+- This site uses [Django Summernote](https://github.com/summernote/django-summernote) which provides WYSIWYG editor for creating and editing blog posts. By default, Django Summernote escapes all HTML tags. I wrote two custom functions to fix this bug. See features section in the [README.md](README.md) for more detail.
+
+-   ### Unfixed Bugs
