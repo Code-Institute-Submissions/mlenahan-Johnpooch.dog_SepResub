@@ -26,34 +26,33 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
 -   ## [Pep8 validation](http://pep8online.com/)
 
-    - All python files have been passed through the pep8online validation service. Only one file contains errors and that is `test_models.py`. The two errors present in this file are line too long errors for the function names. From my research, it is not good practice to split the name of a function so I have left them on one line.
+    - All python files have been passed through the pep8online validation service. Only one file contains errors and that is `test_models.py`. There are 7 'line too long' errors in this file. From my research, it is not good practice to split the name of a function so I have left them on one line. The 5 other errors occur in the test logic. I tried splitting the `escaped_content` and `expected_content` over several lines. This removed the 'line too long' errors but it broke my test cases so I reverted the changes to allow the tests to work as intended.
 
         - models.py
 
-        - ![image](media/testing_screenshots/modelspy.png)
+        ![image](media/testing_screenshots/modelspy.png)
 
         - admin.py
         
-        - ![image](media/testing_screenshots/adminpy.png)
+        ![image](media/testing_screenshots/adminpy.png)
 
-        - apps.py.py
+        - apps.py
         
-        - ![image](media/testing_screenshots/appspy.png)
+        ![image](media/testing_screenshots/appspy.png)
 
         - forms.py
         
-        - ![image](media/testing_screenshots/formspy.png)
+        ![image](media/testing_screenshots/formspy.png)
 
         - test_models.py
         
-        - ![image](media/testing_screenshots/testspy.png)
+        ![image](media/testing_screenshots/testspy.png)
 
         - urls.py
         
-        - ![image](media/testing_screenshots/urlspy.png)
+        ![image](media/testing_screenshots/urlspy.png)
 
         - views.py
         
-        - ![image](media/testing_screenshots/viewspy.png)
+        ![image](media/testing_screenshots/viewspy.png)
 
-        
