@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 {% extends "base.html" %}
 
 {% block content %}
@@ -16,7 +14,7 @@
             {% else %}
             <div class="image-container">
                 <a href="{% url 'post_detail' post.slug  %}">
-                    <img src="{{ post.featured_image.url }}">
+                    <img alt="post detail image" src="{{ post.featured_image.url }}">
                 </a>
             </div>
             {% endif %}
@@ -41,4 +39,4 @@
     {% endif %}
 </div>
 {%endblock%}
-</html>
+
