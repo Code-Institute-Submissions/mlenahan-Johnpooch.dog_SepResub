@@ -134,10 +134,70 @@ This website will be a place to read about all the languages, frameworks and tec
     - Currently the password reset function doesn't actually send and email to reset your password so this is a feature I defintely want to add in the future.
     
 
+# Design
+
+- __Colour Scheme__
+
+    - As this is a blog site, I decided to use a simple monochromatic colour scheme. This creates a harmonious, visually cohesive look. It doesn't draw attention to itself and lets the content shine.
+
+ - __Typography__
+
+    - I used [Google Fonts](https://fonts.google.com/) to import the fonts used for this site. I decided to use 'Martel Sans' as the primary font and 'Lora' as the secondary font.
+
+- __Imagery__
+
+    - All imagery for each article will be set by the author of the articles.
+
+- __Design Choices__
+
+    - The overall look and styling of this site is based on the zen styling of [Medium](https://medium.com/). I love reading articles on Medium and really enjoy the way they display their content so I took inspiration from this and applied it to my site.
+
+# Technologies
+
+## Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks, Libraries and Programs Used
+
+1. [Google Fonts](https://fonts.google.com/)
+2. [Font Awesome](https://fontawesome.com/)
+3. [Git](https://git-scm.com/)
+4. [GitHub](https://github.com/)
+5. [Gitpod](https://www.gitpod.io/)
+6. [Chrome devtools](https://developer.chrome.com/docs/devtools/)
+7. [Heroku](https://dashboard.heroku.com/apps)
+8. [Postgres](https://www.postgresql.org/)
+9. [Django](https://www.djangoproject.com/)
+10. [Autopep8](https://pypi.org/project/autopep8/)
+11. [Django Summernote](https://github.com/summernote/django-summernote)
+12. [Re](https://docs.python.org/3/library/re.html)
 
 
+# Testing
 
+Testing and results can be found [here](TESTING.md)
 
+# Deployment
+
+## Fork
+
+- To fork this project, go to my [repository](https://github.com/mlenahan/Johnpooch.dog).
+
+- Click the fork option displayed below.
+
+![image](media/readme_screenshots/fork.png)
+
+- The fork should now be in your repositories.
+
+## Clone
+
+- If someone wishes to clone the [repository](https://github.com/mlenahan/Johnpooch.dog), they can do so by using this command in their terminal/command line `git clone https://github.com/mlenahan/Johnpooch.dog.git`
+
+- To install requirements, the user can use this command in their terminal/command line `pip3 install -r requirements.txt`
 
 
 
