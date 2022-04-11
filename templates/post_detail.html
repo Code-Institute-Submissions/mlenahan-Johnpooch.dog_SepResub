@@ -19,7 +19,7 @@
             <div>
                 {% if "placeholder" in post.featured_image.url %}
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img class="post-image" alt="post image" src=" {{ post.featured_image.url }}">
                 {% endif %}
             </div>
             <div class="content">

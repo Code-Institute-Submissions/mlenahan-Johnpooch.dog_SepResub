@@ -199,6 +199,27 @@ Testing and results can be found [here](TESTING.md)
 
 - To install requirements, the user can use this command in their terminal/command line `pip3 install -r requirements.txt`
 
+## Heroku
 
+- Log in to Heroku, click 'New' and select 'Create New App'. In window give the app a name and choose region closest to you and then click 'Create App'. Then in Resources under Add-ons, select Heroku Postgres.
 
+- In new app page select settings from menu, click reveal config vars. I added the config vars displayed below.
+
+![image](media/readme_screenshots/configvar.png)
+
+- Select 'Deploy' from menu. I chose to use GitHub to deploy my site. To do so, you search for your repo and select it. You then click the 'deploy branch' option. Heroku will deploy the repo for you automatically.
+
+![image](media/readme_screenshots/deployment.png)
+
+- You can also select automatic deployment to ensure heroku will deploy new versions of the project as you update it.
+
+- You will need to run migrations in the heroku CLI if you make any changes to the models in your project.
+
+# Credits
+
+- Code Institute for walk through project 'I Think Therefore I Blog' and their GitPod template.
+
+- StackOverflow for helping me troubleshoot issues I encountered and providing code snippets I could modify to use in my project.
+
+- My good friend, [John McDowell](https://www.linkedin.com/in/john-mcdowell-b9882b9b/). He suggested the idea for the project to me. He told me he needed a blog site to post his articles and thought it would be the perfect portfolio project. All content and articles on the site are written by John.
 

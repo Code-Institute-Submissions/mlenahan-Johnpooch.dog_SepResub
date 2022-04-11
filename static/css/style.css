@@ -133,6 +133,10 @@ body {
     color: inherit;
  }
 
+ .post-image {
+    width: 100%;
+ }
+
  .tags {
     display: flex;
     gap: 16px;
