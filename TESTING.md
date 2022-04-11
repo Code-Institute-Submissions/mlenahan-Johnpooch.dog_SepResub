@@ -69,3 +69,35 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 - This site uses [Django Summernote](https://github.com/summernote/django-summernote) which provides WYSIWYG editor for creating and editing blog posts. By default, Django Summernote escapes all HTML tags. I wrote two custom functions to fix this bug. See features section in the [README.md](README.md) for more detail.
 
 -   ### Unfixed Bugs
+
+- Since the site uses Django Oauth for authorisation, my `SiteSettings` model is unusable(or I'm just unsure how to use it) in the Django Oauth templates meaning the title that acts as a home button does not appear when using these pages.
+
+![image](media/testing_screenshots/sitesetting.png)
+
+## Responsiveness
+
+My site is responsive accross all devices as far as I am aware.
+
+- ### Desktop
+
+![image](media/readme_screenshots/landing.png)
+
+- ### Tablet
+
+    - Tablet landscape
+
+![image](media/testing_screenshots/tablet_landscape.png)
+
+    - Tablet portrait
+
+![image](media/testing_screenshots/tablet_portrait.png)
+
+- ### Mobile
+
+- Mobile landscape
+
+![image](media/testing_screenshots/mobile_landscape.jpg)
+
+- Mobile portrait
+
+![image](media/testing_screenshots/mobile_portrait.jpg)
