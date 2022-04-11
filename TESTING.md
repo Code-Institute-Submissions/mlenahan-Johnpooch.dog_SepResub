@@ -86,18 +86,18 @@ My site is responsive accross all devices as far as I am aware.
 
     - Tablet landscape
 
-![image](media/testing_screenshots/tablet_landscape.png)
+    ![image](media/testing_screenshots/tablet_landscape.png)
 
     - Tablet portrait
 
-![image](media/testing_screenshots/tablet_portrait.png)
+    ![image](media/testing_screenshots/tablet_portrait.png)
 
 - ### Mobile
 
-- Mobile landscape
+    - Mobile landscape
 
-![image](media/testing_screenshots/mobile_landscape.jpg)
+    ![image](media/testing_screenshots/mobile_landscape.jpg)
 
-- Mobile portrait
+    - Mobile portrait
 
-![image](media/testing_screenshots/mobile_portrait.jpg)
+    ![image](media/testing_screenshots/mobile_portrait.jpg)
