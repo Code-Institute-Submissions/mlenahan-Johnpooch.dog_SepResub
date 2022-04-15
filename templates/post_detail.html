@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 {% load crispy_forms_tags %}
-
+<script src="script.js"></script>
 <div class="container">
     <div class="content">
         <div>
@@ -19,6 +19,9 @@
                 {% else %}
                 <img class="post-image" alt="post image" src=" {{ post.featured_image.url }}">
                 {% endif %}
+            </div>
+            <div class="share">
+                <button id="shareBtn">SHARE</button>
             </div>
             <div class="content">
                 <p>{{ post.excerpt | safe }}</p>
@@ -80,4 +83,29 @@
 </div>
 </div>
 
+<script>
+    const shareBtn = document.getElementById('shareBtn')
+
+    const url = window.location.href;
+
+
+shareBtn.addEventListener('click', event => {
+    // const queryString = window.location.search;
+    // console.log(queryString);
+  // Check for Web Share api support
+  if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please read this great article: ',
+      url: url
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+});
+</script>
 {% endblock content %}
