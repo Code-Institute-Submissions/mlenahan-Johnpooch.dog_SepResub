@@ -7,6 +7,9 @@
     --background-secondary: rgba(250, 250, 250, 1);
     --background-dark: #121212;
     --text-dark: #ECEFF1;
+    --snippet-text: #000000;
+    --snippet-background: rgb(242, 242, 242);
+
     
   
     /* Font System */
@@ -27,7 +30,12 @@
   .darkmode {
    background-color: var(--background-dark);
    color: var(--text-dark);
+   --snippet-text:#000000;
+   --background-secondary: #332940;
+   --border-color: #332940;
+   --background-main: #000000;
   }
+
 
   /* @media (prefers-color-scheme: dark) {
    .container {
@@ -61,6 +69,7 @@ body {
     min-height: 100vh
 }
  nav {
+    background-color: var(--background-main);
     font-family: var(--primary-font);
     font-weight: 400;
     border-bottom: solid var(--border-thickness) var(--border-color);
@@ -121,6 +130,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
+    color: var(--primary-main);
  }
 
  .pre-footer > div {
@@ -173,6 +183,7 @@ body {
     display: flex;
     gap: 16px;
     padding: 32px 0;
+    color: var(--snippet-text);
  }
 
  .tags > span {
@@ -216,8 +227,9 @@ body {
  .inline-code-snippet {
    padding: 2px;
    font-family: Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
-   background-color: rgb(242, 242, 242);
+   background-color: var(--snippet-background);
    font-size: 75%;
+   color: var(--snippet-text);
  }
 
  .alert-success {
