@@ -25,6 +25,9 @@
                     </li>
                 </ul>
                 <ul>
+                    <li>
+                        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">Toggle Dark Mode</button>
+                    </li>
                     {% if user.is_authenticated %}
                     <li>
                         <a href="{% url 'account_logout' %}">Logout</a>
@@ -69,5 +72,5 @@
             </div>
     </footer>
 </body>
-
+<script src="/static/js/darkmode.js"></script>
 </html>

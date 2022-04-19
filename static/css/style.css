@@ -5,9 +5,12 @@
     --secondary-main: rgb(117, 117, 117);
     --background-main: #FFFFFF;
     --background-secondary: rgba(250, 250, 250, 1);
+    --background-dark: #121212;
+    --text-dark: #ECEFF1;
+    
   
     /* Font System */
-  
+
     /* Font face */
     --primary-font: 'Martel Sans', sans-serif;
     --secondary-font: 'Lora', sans-serif;
@@ -20,6 +23,32 @@
     --border-thickness: 1px;
     --border-color: rgba(0, 0, 0, 0.1);
   }
+
+  .darkmode {
+   background-color: var(--background-dark);
+   color: var(--text-dark);
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+   .container {
+      background-color: #121212;
+      color: #ECEFF1;
+   }
+
+   .pre-footer {
+      background-color: #121212;
+      color: #000000;
+   }
+
+   nav {
+      background-color: #332940;
+      color: #ECEFF1;
+   }
+
+   footer {
+      background-color: #332940;
+   }
+} */
 
 body {
     background-color: var(--background-main);
@@ -87,7 +116,7 @@ body {
  }
 
  .pre-footer {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--background-secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,8 +134,8 @@ body {
  }
 
  footer {
-    background-color: black;
-    color: white;
+    background-color: var(--primary-main);
+    color: var(--background-main);
     padding: 32px 0;
     display: flex;
     flex-direction: column;

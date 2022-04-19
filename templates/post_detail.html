@@ -1,6 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 {% load crispy_forms_tags %}
-<script src="script.js"></script>
 <div class="container">
     <div class="content">
         <div>
@@ -90,8 +89,7 @@
 
 
 shareBtn.addEventListener('click', event => {
-    // const queryString = window.location.search;
-    // console.log(queryString);
+    const queryString = window.location.search;
   // Check for Web Share api support
   if (navigator.share) {
     // Browser supports native share api
