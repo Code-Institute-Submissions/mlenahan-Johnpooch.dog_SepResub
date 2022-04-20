@@ -26,7 +26,10 @@
                 </ul>
                 <ul>
                     <li>
-                        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">Toggle Dark Mode</button>
+                        <label id="dark-mode-toggle" class="dark-mode-toggle switch" aria-label="toggle dark mode">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
                     </li>
                     {% if user.is_authenticated %}
                     <li>
