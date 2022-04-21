@@ -315,6 +315,20 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.btn {
+   background-color: DodgerBlue; 
+   border: none; 
+   color: white; 
+   padding: 12px 16px;
+   font-size: 16px; 
+   cursor: pointer;
+   border-radius: 8px;
+ }
+ 
+ .btn:hover {
+   background-color: RoyalBlue;
+ }
+
  @media only screen and (max-width: 900px) {
     .pre-footer {
       padding-left: 32px;
