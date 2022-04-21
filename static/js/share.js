@@ -1,8 +1,7 @@
-const shareBtn = document.getElementById('shareBtn')
+const shareBtn = document.getElementById('shareBtn');
 const url = window.location.href;
 
 shareBtn.addEventListener('click', event => {
-    const queryString = window.location.search;
   // Check for Web Share api support
   if (navigator.share) {
     // Browser supports native share api
@@ -15,6 +14,6 @@ shareBtn.addEventListener('click', event => {
       .catch((err) => console.error(err));
   } else {
     // Fallback
-    alert("The current browser does not support the share function. Please, manually share the link")
+    alert("The current browser does not support the share function. Please, manually share the link");
   }
 });

@@ -16,7 +16,7 @@ if (darkMode === 'enabled') {
 }
 
 darkModeToggle.addEventListener('change', () => {
-    darkMode = localStorage.getItem('darkMode')
+    darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled') {
         enableDarkMode();
     } else {
