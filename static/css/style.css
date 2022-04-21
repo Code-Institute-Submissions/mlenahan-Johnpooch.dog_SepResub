@@ -368,6 +368,13 @@ input:checked + .slider:before {
   
 }
 
+@media only screen and (max-width: 460px) {
+   .nav-right {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
 .all-auth-signup {
    display: flex;
    justify-content: center;
