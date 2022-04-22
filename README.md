@@ -122,6 +122,44 @@ This website will be a place to read about all the languages, frameworks and tec
 
     - Users will recieve confirmation that an email has been sent to them for resetting their password.
 
+- __Dark mode toggle__
+
+    - This site has the option of toggling dark mode on and off. I have implemented it by adding a sliding button in the top right of the page. By clicking this button, users can toggle between light and dark modes depending on their preferences.
+
+    - I implemented the `localStorage` property in the script meaning the setting the user has selected will be stored in the browser. The next time they visit the site, the mode they selected will still be applied.
+
+    The site in light mode can be seen here.
+
+    ![image](media/readme_screenshots/lightmode.png)
+
+    The site in dark mode can be seen here.
+
+    ![image](media/readme_screenshots/darkmode.png)
+
+    The toggle in dark mode can be seen here.
+
+    ![image](media/readme_screenshots/darkmodetoggle.png)
+
+    The toggle in light mode can be seen here.
+
+    ![image](media/readme_screenshots/lightmodetoggle.png)
+
+- __Share button__
+
+    ![image](media/readme_screenshots/sharebutton.png)
+
+    - This site features a share button on each post page. This was implemented using the `naviagator.share` method of the [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API).
+
+    - The `navigator.share()` method invokes the native sharing mechanism of the underlying operating system and passes the specified data.
+
+    - This feature only works for sites that have end-to-end encryption and currently this site does not have end-to-end encryption so the fallback message will always be triggered if you click the share button. 
+
+    - To enabe this feature I will need to upgrade to paid dynos on Heroku and configure Heroku SSL.
+
+    The shar ebutton can be seen here
+
+    ![image](media/readme_screenshots/sharebutton.png)
+
 
 ## Features to implement
 
