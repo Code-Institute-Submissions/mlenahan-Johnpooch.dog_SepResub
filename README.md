@@ -156,11 +156,6 @@ This website will be a place to read about all the languages, frameworks and tec
 
     - To enabe this feature I will need to upgrade to paid dynos on Heroku and configure Heroku SSL.
 
-    The shar ebutton can be seen here
-
-    ![image](media/readme_screenshots/sharebutton.png)
-
-
 ## Features to implement
 
 - __Email post notifications__

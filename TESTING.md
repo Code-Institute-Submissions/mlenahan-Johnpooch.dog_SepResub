@@ -56,6 +56,18 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
         
         ![image](media/testing_screenshots/viewspy.png)
 
+-   ## [JSHint](https://jshint.com/)
+
+    - All JavaScript files have been passed through JSHint for validation. The only issues present are ES6 related warnings as JSHint doesn't support ES6 validation.
+
+        - darkmode.js
+
+        ![image](media/testing_screenshots/darkmodejsvalidation.png)
+
+        - share.js
+
+        ![image](media/testing_screenshots/sharejsvalidation.png)
+
 -   ## Unit Testing 
 
     - I made the decision to unit test two functions in my project. `unescape_gist_embeds` and `substitute_code_snippets` in the `models.py` file. I decided that it is essential to ensure these functions work as intended as this site is a developer blog and will include many gists and code snippets.
