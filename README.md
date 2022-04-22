@@ -254,5 +254,7 @@ Testing and results can be found [here](TESTING.md)
 
 - StackOverflow for helping me troubleshoot issues I encountered and providing code snippets I could modify to use in my project.
 
+- [Kevin Powell](https://www.youtube.com/kepowob) for the tutorial on dark mode.
+
 - My good friend, [John McDowell](https://www.linkedin.com/in/john-mcdowell-b9882b9b/). He suggested the idea for the project to me. He told me he needed a blog site to post his articles and thought it would be the perfect portfolio project. All content and articles on the site are written by John.
 
