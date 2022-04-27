@@ -311,6 +311,10 @@ input:checked + .slider:before {
    background-color: RoyalBlue;
  }
 
+ .darkmode-span {
+    font-size: x-small;
+ }
+
  @media only screen and (max-width: 900px) {
     .pre-footer {
       padding-left: 32px;
@@ -344,8 +348,8 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 550px) {
    .container {
-     padding-left: 64px;
-     padding-right: 64px;
+     padding-left: 32px;
+     padding-right: 32px;
    }
   
 }
