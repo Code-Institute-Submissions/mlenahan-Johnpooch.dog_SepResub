@@ -169,6 +169,14 @@ This website will be a place to read about all the languages, frameworks and tec
 
 # Design
 
+## Skeleton
+
+Wireframes were created on Balsamiq (see links below)
+
+* [Mobile](media/wireframes/mobile_wireframes/)
+* [Tablet](media/wireframes/tablet_wireframes)
+* [Desktop](media/wireframes/desktop_wireframes/)
+
 - __Colour Scheme__
 
     - As this is a blog site, I decided to use a simple monochromatic colour scheme. This creates a harmonious, visually cohesive look. It doesn't draw attention to itself and lets the content shine.
