@@ -173,9 +173,9 @@ This website will be a place to read about all the languages, frameworks and tec
 
 Wireframes were created on Balsamiq (see links below)
 
-* [Mobile](media/wireframes/mobile_wireframes/)
-* [Tablet](media/wireframes/tablet_wireframes)
-* [Desktop](media/wireframes/desktop_wireframes/)
+* [Mobile](media/wireframes/mobile_wireframes/ms4-mobile-bals.pdf)
+* [Tablet](media/wireframes/tablet_wireframes/ms4-tablet-bals.pdf)
+* [Desktop](media/wireframes/desktop_wireframes/ms4-desktop-bals.pdf)
 
 - __Colour Scheme__
 
