@@ -74,6 +74,8 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
         - To run the tests, enter the command `python3 manage.py test blog/tests` into your terminal/command line.
 
+    ## Testing User Stories
+
 ## Bugs
 
 -   ### Fixed Bugs
