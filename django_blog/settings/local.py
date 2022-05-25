@@ -4,7 +4,7 @@ if os.path.isfile('env.py'):
 
 SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 

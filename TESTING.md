@@ -74,7 +74,98 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
         - To run the tests, enter the command `python3 manage.py test blog/tests` into your terminal/command line.
 
-    ## Testing User Stories
+-    ## Testing User Stories
+
+        - First Time Visitor
+
+            - The main purpose of the site is clear. A first time visitor can clearly see that this is a blog style site.
+
+            - The site is appealing and easy to navigate. The site has a clean, minimal monochromatic style and the nav bar is easy to navigate.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-main-purpose.png)
+
+            - The site is accessible and responsive across all devices.
+
+            Mobile
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-mobile.jpg)
+
+            Tablet
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-tablet.png)
+
+            - It is easy to register for an account. The register link is on the right side of the nav bar and the Sign Up form is easy to navigate.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-sign-up.png)
+        
+        - Unregistered Visitor
+
+            - All available articles are present on the landing page of the site so they are easy to access and navigate. They are presented in reverse chronological order.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-view-all-available-articles.png)
+
+            - By simply clicking the title of an article, the user will be brought to the article page therefore making it easy to select and read individual articles.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-read-article.png)
+
+        - Registered User
+
+            - It is easy to log in and logout of the site. The log in button is located on the right side of the nav bar. Once logged in. the logout button will be located on the right side of the nav bar. This allows for easy loggin in and loggin out.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-sign-in.png)
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-log-out.png)
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-sign-out2.png)
+
+            Feedback is given once you have signed out making it clear your action was successful
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-sign-out3.png)
+
+            - It is easy for a registered user to comment under individual posts. The comment box is clear and simple to use.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-commentbox.png)
+
+            - Once a comment is posted, feedback is provided to the user showing their actioan was successful and is awaiting approval.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-comment-feedback.png)
+
+            - Icons with links to the authors GitHub and LinkedIn are present in the footer of the site and above each individual post allowing for the user to easily follow the author on these platforms
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-socials.png)
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-socials2.png)
+
+            - If a registered user wants to change their password, they can easily do so by navigating to the change password page.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-passwordreset.png)
+
+            Once the user has reset their password, feedback is provided to show their action was successful
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-passwordresetconfirmation.png)
+        
+        - Superuser
+
+            - It is simple for a superuser to add, delete and edit articles.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-superuser-article.png)
+
+            - It is simple for a superuser to approve and delete comments posted by a registered user.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-superuser-comment.png)
+
+            - It is simple for a superuser to delete a user.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-superuser-user-delete.png)
+
+            - It is simple for a superuser to edit or delete tags.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-superuser-tag-edit.png)
+
+            - It is simple for a superser to give other users admin status.
+
+            ![image](media/testing_screenshots/testing_user_stories/user-story-superuser-give-admin-status.png)
+            
 
 ## Bugs
 
