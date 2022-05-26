@@ -1,9 +1,12 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views import generic, View
+from django.views.generic.edit import DeleteView, UpdateView
 from .models import Post, SiteSettings, Comment
 from .forms import CommentForm
+
 
 
 
@@ -72,34 +75,16 @@ class PostDetail(View):
                 "comment_form": comment_form,
             },
         )
-    
-    # def delete_comment(self, request, comment_id):
-        
-    #     comment = get_object_or_404(Comment, pk=comment_id)
-    #     comment.delete()
-    #     messages.success(request, 'Comment deleted!')
-    #     return redirect(reverse('comments'))
 
 
-# def edit_comment(request, comment_id):
-    
-#     comment = get_object_or_404(Comment, pk=comment_id)
-#     if request.method == 'POST':
-#         form = CommentForm(request.POST, request.FILES, instance=comment)
-#         if form.is_valid():
-#             form.save()
-#             messages.success(request, 'Successfully updated comment!')
-#             return redirect(reverse('post_detail', args=[comment.id]))
-#         else:
-#             messages.error(request, 'Failed to update comment. Please ensure the form is valid.')
-#     else:
-#         form = CommentForm(instance=comment)
-#         messages.info(request, f'You are editing {comment.body}')
+# class CommentDeleteView(DeleteView):
+#     model = Comment
+#     success_url = reverse_lazy('post_detail')
 
-#     template = 'templates/edit_comment.html'
-#     context = {
-#         'form': form,
-#         'comment': comment,
-#     }
 
-#     return render(request, template, context)
+@login_required
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment.delete()
+    messages.success(request, 'Comment deleted!')
+    return redirect('post_detail')

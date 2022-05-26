@@ -18,39 +18,39 @@ This website will be a place to read about all the languages, frameworks and tec
 ## Strategy
 
 * User Goals
-    * I want to be able to browse various articles on the site
-    * I want an appealing and easy to navigate site
+    * As a user, I want to be able to browse various articles on the site
+    * As a user, I want an appealing and easy to navigate site
 
 * Site Owner Goals 
-    * I want the site to be accessible and responsive to allow users on all devices to be able to browse the site
-    * I want the site to have interesting and engaging articles to build up an audience
+    * As site owner, I want the site to be accessible and responsive to allow users on all devices to be able to browse the site
+    * As site owner, I want the site to have interesting and engaging articles to build up an audience
     
 
 ## User Stories
 
 * First Time Visitor 
-    * I want to understand the main purpose of the site
-    * I want to see an appealing and easy to navigate site
-    * I expect the site to be accessible to all devices
-    * I want to easily register for an account
+    * As a first time visitor, I want to understand the main purpose of the site
+    * As a first time visitor, I want to see an appealing and easy to navigate site
+    * As a first time visitor, I expect the site to be accessible to all devices
+    * As a first time visitor, I want to easily register for an account
 
 * Unregistered Visitor
-    * I want to be able to view all articles that are available for me to read
-    * I want to be able to select and read individial articles
+    * As an unregistered visitor, I want to be able to view all articles that are available for me to read
+    * As an unregistered visitor, I want to be able to select and read individial articles
 
 * Registered Visitor
-    * I want to be able to log in and log out
-    * I want to be able to comment under invididual articles
-    * I want to be able to easily follow the author on GitHub and LinkedIn
-    * I want to be able to change my password if I forget it
-    * I want to recieve feedback that my comment is awaiting approval
+    * As a registered visitor, I want to be able to log in and log out
+    * As a registered visitor, I want to be able to comment under invididual articles
+    * As a registered visitor, I want to be able to easily follow the author on GitHub and LinkedIn
+    * As a registered visitor, I want to be able to change my password if I forget it
+    * As a registered visitor, I want to recieve feedback that my comment is awaiting approval
 
 * Superuser
-    * I want to be able to add, delete or edit articles
-    * I want to be able to approve and delete comments posted by registered users
-    * I want to be able to delete a user
-    * I want to be able to edit and delete tags
-    * I want to have to ability to give give other users admin status
+    * As a superuser, I want to be able to add, delete or edit articles
+    * As a superuser, I want to be able to approve and delete comments posted by registered users
+    * As a superuser, I want to be able to delete a user
+    * As a superuser, I want to be able to edit and delete tags
+    * As a superuser, I want to have to ability to give give other users admin status
     
 # Features
 

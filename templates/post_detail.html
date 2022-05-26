@@ -56,6 +56,9 @@
                         </div>
                         {% endfor %}
                     </div>
+                    {% if user.is_authenticated %}
+                    <!-- <a href="{% url 'delete_comment' comment.id %}">Delete</a> -->
+                    {% endif %}
                 </div>
                 <div>
                     <div>
@@ -73,14 +76,13 @@
                             {{ comment_form | crispy }}
                             {% csrf_token %}
                             <button type="submit">Submit</button>
-                            <a class="text-danger" href="{% url 'delete_comment' comment.id %}">Delete</a>
-                            
                         </form>
                         
                         {% endif %}
                         {% endif %}
                     </div>
                 </div>
+                
         </div>
     </div>
 </div>
