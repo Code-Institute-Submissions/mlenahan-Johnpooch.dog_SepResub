@@ -36,14 +36,14 @@ This website will be a place to read about all the languages, frameworks and tec
 
 * Unregistered Visitor
     * As an unregistered visitor, I want to be able to view all articles that are available for me to read
-    * As an unregistered visitor, I want to be able to select and read individial articles
+    * As an unregistered visitor, I want to be able to select and read individual articles
 
 * Registered Visitor
     * As a registered visitor, I want to be able to log in and log out
     * As a registered visitor, I want to be able to comment under invididual articles
     * As a registered visitor, I want to be able to easily follow the author on GitHub and LinkedIn
     * As a registered visitor, I want to be able to change my password if I forget it
-    * As a registered visitor, I want to recieve feedback that my comment is awaiting approval
+    * As a registered visitor, I want to receive feedback that my comment is awaiting approval
 
 * Superuser
     * As a superuser, I want to be able to add, delete or edit articles
