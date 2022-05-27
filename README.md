@@ -54,6 +54,10 @@ This website will be a place to read about all the languages, frameworks and tec
     * As a superuser, I want to be able to edit and delete tags, so that I have full control over the tags being used on the posts.
     * As a superuser, I want to have to ability to give give other users admin status, so that I can give trusted users the ability to moderate the site.
     
+User stories have also been recorded using GitHub issues and have been placed in the milsetone section under a 'Product Backlog' title. They can be seen [here.](https://github.com/mlenahan/Johnpooch.dog/milestone/1)
+
+
+
 # Features
 
 ## Existing Features
