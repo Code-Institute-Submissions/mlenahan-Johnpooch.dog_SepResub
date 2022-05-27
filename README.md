@@ -29,28 +29,30 @@ This website will be a place to read about all the languages, frameworks and tec
 ## User Stories
 
 * First Time Visitor 
-    * As a first time visitor, I want to understand the main purpose of the site
-    * As a first time visitor, I want to see an appealing and easy to navigate site
-    * As a first time visitor, I expect the site to be accessible to all devices
-    * As a first time visitor, I want to easily register for an account
+    * As a first time visitor, I want to understand the main purpose of the site, so that I can determine whether I wish to continue to browse or not.
+    * As a first time visitor, I want to see an appealing and easy to navigate site, so that my browsing is enjoyable and pleasant to look at.
+    * As a first time visitor, I expect the site to be accessible to all devices, so that I can browse the site across all my devices.
+    * As a first time visitor, I want to easily register for an account, so that i can avail of the features only available to registered users.
 
 * Unregistered Visitor
-    * As an unregistered visitor, I want to be able to view all articles that are available for me to read
-    * As an unregistered visitor, I want to be able to select and read individual articles
+    * As an unregistered visitor, I want to be able to view all articles that are available for me to read, so that I can decide which article I would like to read.
+    * As an unregistered visitor, I want to be able to select individual articles, so that I can read them.
 
 * Registered Visitor
-    * As a registered visitor, I want to be able to log in and log out
-    * As a registered visitor, I want to be able to comment under invididual articles
-    * As a registered visitor, I want to be able to easily follow the author on GitHub and LinkedIn
-    * As a registered visitor, I want to be able to change my password if I forget it
-    * As a registered visitor, I want to receive feedback that my comment is awaiting approval
+    * As a registered visitor, I want to be able to log in and log out, so that I can gain access to registered user features and log out when I am done browsing.
+    * As a registered visitor, I want to be able to comment under individual articles, so that I can share my thoughts on the article.
+    * As a registered visitor, I want to be able to edit any comments I have posted, so that I can fix any mistakes i've made.
+    * As a registered visitor, I want to be able to delete any comments I have posted, so that I can delete any comments I don't want posted any longer.
+    * As a registered visitor, I want to be able to easily follow the author on GitHub and LinkedIn, so that I can keep up to date with the things they are working on.
+    * As a registered visitor, I want to be able to change my password if I forget it, so that I can continue to use the site.
+    * As a registered visitor, I want to receive feedback that my comment is awaiting approval, so I know that my posting was successful.
 
 * Superuser
-    * As a superuser, I want to be able to add, delete or edit articles
-    * As a superuser, I want to be able to approve and delete comments posted by registered users
-    * As a superuser, I want to be able to delete a user
-    * As a superuser, I want to be able to edit and delete tags
-    * As a superuser, I want to have to ability to give give other users admin status
+    * As a superuser, I want to be able to add, delete or edit articles, so that I have full control over the content on the site.
+    * As a superuser, I want to be able to approve and delete comments posted by registered users, so that I can moderate the comments that users are putting under the posts.
+    * As a superuser, I want to be able to delete a user, so that I have full control over who is using the site.
+    * As a superuser, I want to be able to edit and delete tags, so that I have full control over the tags being used on the posts.
+    * As a superuser, I want to have to ability to give give other users admin status, so that I can give trusted users the ability to moderate the site.
     
 # Features
 
