@@ -56,6 +56,8 @@ This website will be a place to read about all the languages, frameworks and tec
     
 User stories have also been recorded using GitHub issues and have been placed in the milsetone section under a 'Product Backlog' title. They can be seen [here.](https://github.com/mlenahan/Johnpooch.dog/milestone/1)
 
+I also used an Iteration Board to help with the planning of this project. That can be seen [here.](https://github.com/mlenahan/Johnpooch.dog/projects/1)
+
 
 
 # Features
