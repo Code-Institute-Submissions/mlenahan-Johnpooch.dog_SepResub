@@ -232,6 +232,44 @@ Testing and results can be found [here](TESTING.md)
 
 # Deployment
 
+### Initial deployment
+
+- Gitpod
+    - Create new repository from CI template
+    - Install Django and required dependencies into Gitpod workspace
+    - Create new Django project called "gamersforum"
+    - Create procfile as required
+    - Run "pip3 freeze --local > requirements.txt" to update requirements file
+- Heroku
+    - Log into Heroku 
+    - Create new app called "the-gamers-forum"
+    - Add a PostgreSQL "hobby" database as resource
+    - Configure "DISABLE_COLLECTSTATIC = 1" in Config Vars
+- Gitpod
+    - Create env.py file and add database path from Heroku
+    - Add secret key to env.py
+    - Configure database path and secret key in settings.py to be read from environment variables
+    - Perform commit and push to GitHub
+- Heroku 
+    - Under the app, browse to Deploy
+    - Connect to Github, select appropriate repository
+    - Run Deploy
+    - Wait for confirmation that app has deployed
+
+### Final deployment
+
+- Gitpod
+    - Ensure all required files up-to-date and that application is working
+    - Run "pip3 freeze --local > requirements.txt" to update requirements file
+    - Ensure "DEBUG = False" set in settings.py
+    - Perform commit and push to GitHub
+- Heroku
+    - Under the app, browse to Config Vars
+    - Remove the value "DISABLE_COLLECTSTATIC = 1" from Config Vars
+    - Browse to Deploy and run deployment
+    - Wait for confirmation that app has deployed
+
+
 ## Fork
 
 - To fork this project, go to my [repository](https://github.com/mlenahan/Johnpooch.dog).
@@ -247,22 +285,6 @@ Testing and results can be found [here](TESTING.md)
 - If someone wishes to clone the [repository](https://github.com/mlenahan/Johnpooch.dog), they can do so by using this command in their terminal/command line `git clone https://github.com/mlenahan/Johnpooch.dog.git`
 
 - To install requirements, the user can use this command in their terminal/command line `pip3 install -r requirements.txt`
-
-## Heroku
-
-- Log in to Heroku, click 'New' and select 'Create New App'. In window give the app a name and choose region closest to you and then click 'Create App'. Then in Resources under Add-ons, select Heroku Postgres.
-
-- In new app page select settings from menu, click reveal config vars. I added the config vars displayed below.
-
-![image](media/readme_screenshots/configvar.png)
-
-- Select 'Deploy' from menu. I chose to use GitHub to deploy my site. To do so, you search for your repo and select it. You then click the 'deploy branch' option. Heroku will deploy the repo for you automatically.
-
-![image](media/readme_screenshots/deployment.png)
-
-- You can also select automatic deployment to ensure heroku will deploy new versions of the project as you update it.
-
-- You will need to run migrations in the heroku CLI if you make any changes to the models in your project.
 
 # Credits
 
