@@ -8,12 +8,10 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ['DATABASE_URL'])
 }
 
-ALLOWED_HOSTS = ['django-blog-ml.herokuapp.com', 'johnpooch.dog']
+ALLOWED_HOSTS = ['django-blog-ml.herokuapp.com']
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
 django_heroku.settings(locals())
 
-# DEBUG = 'DEBUG' in os.environ
-
-DEBUG = False
+DEBUG = 'DEBUG' in os.environ
