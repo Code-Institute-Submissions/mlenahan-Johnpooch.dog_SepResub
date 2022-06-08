@@ -14,4 +14,6 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 django_heroku.settings(locals())
 
-DEBUG = 'DEBUG' in os.environ
+# DEBUG = 'DEBUG' in os.environ
+
+DEBUG = False
