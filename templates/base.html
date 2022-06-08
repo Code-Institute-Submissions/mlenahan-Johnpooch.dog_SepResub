@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 
 </head>
 
@@ -32,10 +33,12 @@
                         </span>
                     </li>
                     <li>
+                        
                         <label id="dark-mode-toggle" class="dark-mode-toggle switch" aria-label="toggle dark mode">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
+                        <script src="/static/js/darkmode.js"></script>
                     </li>
                     {% if user.is_authenticated %}
                     <li>
@@ -81,5 +84,5 @@
             </div>
     </footer>
 </body>
-<script src="/static/js/darkmode.js"></script>
+
 </html>
