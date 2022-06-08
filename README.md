@@ -237,12 +237,12 @@ Testing and results can be found [here](TESTING.md)
 - Gitpod
     - Create new repository from CI template
     - Install Django and required dependencies into Gitpod workspace
-    - Create new Django project called "gamersforum"
+    - Create new Django project
     - Create procfile as required
     - Run "pip3 freeze --local > requirements.txt" to update requirements file
 - Heroku
     - Log into Heroku 
-    - Create new app called "the-gamers-forum"
+    - Create new app
     - Add a PostgreSQL "hobby" database as resource
     - Configure "DISABLE_COLLECTSTATIC = 1" in Config Vars
 - Gitpod
