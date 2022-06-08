@@ -4,9 +4,9 @@ if os.path.isfile('env.py'):
 
 SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-blog-ml.herokuapp.com', 'johnpooch.dog']
+ALLOWED_HOSTS = ['localhost']
 
 DATABASES = {
     'default': {
