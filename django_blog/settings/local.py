@@ -6,7 +6,7 @@ SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-blog-ml.herokuapp.com', 'johnpooch.dog']
 
 DATABASES = {
     'default': {
