@@ -20,28 +20,36 @@ django_heroku.settings(locals())
 
 DEBUG = False
 
-import logging.config
-LOGGING_CONFIG = None
-logging.config.dictConfig({
+
+LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
-        'console': {
-            # exact format is not important, this is the minimum information
-            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        'verbose': {
+            'format': ('%(asctime)s [%(process)d] [%(levelname)s] ' +
+                       'pathname=%(pathname)s lineno=%(lineno)s ' +
+                       'funcname=%(funcName)s %(message)s'),
+            'datefmt': '%Y-%m-%d %H:%M:%S'
         },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        }
     },
     'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'console',
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
         },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        }
     },
     'loggers': {
-    # root logger
-        '': {
-            'level': 'DEBUG',
+        'testlogger': {
             'handlers': ['console'],
-        },
-    },
-})
+            'level': 'INFO',
+        }
+    }
+}
