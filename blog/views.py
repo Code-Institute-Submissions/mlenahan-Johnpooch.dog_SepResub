@@ -77,20 +77,22 @@ class PostDetail(View):
             },
         )
 
-    @login_required
-    def delete_comment(self, request, comment_id):
-        comment = get_object_or_404(Comment, pk=comment_id)
-        comment.delete()
-        messages.success(request, 'Comment deleted!')
-        return redirect(reverse('post_detail'))
-
-
-from django.urls import reverse_lazy
-from django.views.generic.edit import DeleteView
-
 
 class CommentDeleteView(DeleteView):
     model = Comment
+
+    def get_success_url(self, **kwargs):         
+        return reverse_lazy('post_detail', kwargs={'slug': self.object.post.slug})
+
+    def get(self, request, *args, **kwargs):
+        return self.post(request, *args, **kwargs)
+
+
+class CommentUpdateView(UpdateView):
+    model = Comment
+
+    fields = ['body']
+    template_name = 'comment_update_form.html'
 
     def get_success_url(self, **kwargs):         
         return reverse_lazy('post_detail', kwargs={'slug': self.object.post.slug})
