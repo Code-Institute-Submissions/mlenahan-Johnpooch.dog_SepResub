@@ -315,6 +315,10 @@ input:checked + .slider:before {
     font-size: x-small;
  }
 
+ .update-delete {
+   font-size: 16px;
+ }
+
  @media only screen and (max-width: 900px) {
     .pre-footer {
       padding-left: 32px;
