@@ -67,6 +67,9 @@ class Post(models.Model):
         super().save(*args, **kwargs)
 
 
+DEFAULT_CREATED_BY_ID = 1
+
+
 class Comment(models.Model):
     post = models.ForeignKey(
         'Post',
@@ -77,7 +80,7 @@ class Comment(models.Model):
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
-    
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, default=DEFAULT_CREATED_BY_ID)
 
     class Meta:
         ordering = ["created_at"]

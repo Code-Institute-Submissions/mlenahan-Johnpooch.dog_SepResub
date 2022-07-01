@@ -54,7 +54,7 @@
                             </p>
                             {{ comment.body | linebreaks }}
                         </div>
-                        {% if user.is_authenticated %}
+                        {% if user.is_authenticated and user == comment.created_by %}
                         <a class="text-danger" href="{% url 'delete_comment' comment.id %}">Delete</a>
                         <a class="text-danger" href="{% url 'update_comment' comment.id %}">Update</a>
                         {% endif %}
