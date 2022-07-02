@@ -33,7 +33,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'mysite.log',
+            'filename': 'blog.log',
             'formatter': 'verbose'
         },
     },
@@ -43,7 +43,7 @@ LOGGING = {
             'propagate': True,
             'level':'DEBUG',
         },
-        'MYAPP': {
+        'blog': {
             'handlers': ['file'],
             'level': 'DEBUG',
         },
