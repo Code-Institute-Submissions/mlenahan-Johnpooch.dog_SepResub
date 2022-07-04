@@ -8,7 +8,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ['DATABASE_URL'])
 }
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://django-blog-ml.herokuapp.com/', 'http://johnpooch.dog/']
+ALLOWED_HOSTS = ['*']
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
