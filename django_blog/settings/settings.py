@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
+import django_heroku
 
 development = os.environ.get('DEVELOPMENT', False)
 
@@ -90,6 +91,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+django_heroku.settings(locals())
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
