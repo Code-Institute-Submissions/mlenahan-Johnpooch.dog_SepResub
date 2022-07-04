@@ -24,8 +24,6 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['*']
-
 # Application definition
 
 INSTALLED_APPS = [

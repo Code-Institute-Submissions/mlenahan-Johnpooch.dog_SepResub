@@ -4,9 +4,9 @@ if os.path.isfile('env.py'):
 
 SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
 
-DEBUG = True
-
 ALLOWED_HOSTS = ['localhost']
+
+DEBUG = True
 
 DATABASES = {
     'default': {
