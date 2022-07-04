@@ -4,7 +4,7 @@ if os.path.isfile('env.py'):
 
 SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 DEBUG = True
 
