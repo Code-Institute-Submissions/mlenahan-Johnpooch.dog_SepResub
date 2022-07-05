@@ -10,9 +10,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-from django.contrib.messages import constants as messages
+import django_heroku
 
-development = os.environ.get('DEVELOPMENT', False)
+debug = os.environ.get('DEBUG', False)
 
 if os.path.isfile('env.py'):
     import env
@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = debug
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -100,6 +100,8 @@ WSGI_APPLICATION = 'django_blog.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ['DATABASE_URL'])
 }
+
+django_heroku.settings(locals())
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
