@@ -4,7 +4,7 @@ import django_heroku
 import logging
 from .base import *
 
-debug = os.environ.get('DEVELOPMENT', False)
+debug = os.environ.get('DEVELOPMENT', True)
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ['DATABASE_URL'])
@@ -16,7 +16,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 django_heroku.settings(locals())
 
-DEBUG = True
+DEBUG = debug
 
 LOGGING = {
     'version': 1,
