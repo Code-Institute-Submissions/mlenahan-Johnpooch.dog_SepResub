@@ -4512,3 +4512,116 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [created_on] in
 [05/Jul/2022 17:26:50] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'comment') LIMIT 21; args=('blog', 'comment')
 [05/Jul/2022 17:26:50] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 17, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 17, 7)
 [05/Jul/2022 17:26:50] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+[05/Jul/2022 17:29:56] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:29:56] DEBUG [django.db.backends:123] (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:15] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:15] DEBUG [django.db.backends:123] (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:25] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:25] DEBUG [django.db.backends:123] (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = OFF; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) BEGIN; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('account', '0006_auto_20220705_1729', '2022-07-05 17:30:33.903031'); args=['account', '0006_auto_20220705_1729', '2022-07-05 17:30:33.903031']
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_key_check; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = ON; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = OFF; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) BEGIN; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('django_summernote', '0006_auto_20220705_1730', '2022-07-05 17:30:33.906190'); args=['django_summernote', '0006_auto_20220705_1730', '2022-07-05 17:30:33.906190']
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_key_check; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = ON; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = OFF; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) BEGIN; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('socialaccount', '0007_auto_20220705_1730', '2022-07-05 17:30:33.908589'); args=['socialaccount', '0007_auto_20220705_1730', '2022-07-05 17:30:33.908589']
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_key_check; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) PRAGMA foreign_keys = ON; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sites' AND "django_content_type"."model" = 'site') LIMIT 21; args=('sites', 'site')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11,)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'allauth'; args=('allauth',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'allauth'; args=('allauth',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'account'; args=('account',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'account' AND "django_content_type"."model" = 'emailaddress') LIMIT 21; args=('account', 'emailaddress')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'account' AND "django_content_type"."model" = 'emailconfirmation') LIMIT 21; args=('account', 'emailconfirmation')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (12, 13) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(12, 13)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'account'; args=('account',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'socialaccount'; args=('socialaccount',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'socialaccount' AND "django_content_type"."model" = 'socialaccount') LIMIT 21; args=('socialaccount', 'socialaccount')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'socialaccount' AND "django_content_type"."model" = 'socialapp') LIMIT 21; args=('socialaccount', 'socialapp')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'socialaccount' AND "django_content_type"."model" = 'socialtoken') LIMIT 21; args=('socialaccount', 'socialtoken')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (16, 14, 15) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(16, 14, 15)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'socialaccount'; args=('socialaccount',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'cloudinary'; args=('cloudinary',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'cloudinary'; args=('cloudinary',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'django_summernote'; args=('django_summernote',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'django_summernote' AND "django_content_type"."model" = 'attachment') LIMIT 21; args=('django_summernote', 'attachment')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(10,)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'django_summernote'; args=('django_summernote',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'sitesettings') LIMIT 21; args=('blog', 'sitesettings')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'tag') LIMIT 21; args=('blog', 'tag')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'post') LIMIT 21; args=('blog', 'post')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'comment') LIMIT 21; args=('blog', 'comment')
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 17, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 17, 7)
+[05/Jul/2022 17:30:33] DEBUG [django.db.backends:123] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
