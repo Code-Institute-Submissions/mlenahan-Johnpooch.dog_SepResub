@@ -4,7 +4,7 @@ import django_heroku
 import logging
 from .base import *
 
-debug = os.environ.get('DEVELOPMENT', True)
+debug = os.environ.get('DEVELOPMENT', False)
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ['DATABASE_URL'])
