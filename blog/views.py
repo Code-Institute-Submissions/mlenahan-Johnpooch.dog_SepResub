@@ -42,6 +42,7 @@ class PostDetail(View):
                 'tags': tags,
                 'comment_form': CommentForm(),
                 'user': request.user,
+                'created_by': comment.created_by,
             },
         )
 
