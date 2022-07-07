@@ -54,8 +54,7 @@
                             </p>
                             {{ comment.body | linebreaks }}
                         </div>
-                            {% if request.user.is_authenticated %}
-                                <span>{{ user.id }} and {{ comment.created_by_id }}</span>
+                            {% if request.user.is_authenticated and request.user == comment.created_by %}
                                 <a class="update-delete" href="{% url 'update_comment' comment.id %}">Update</a>
                                 <a class="update-delete" href="{% url 'delete_comment' comment.id %}">Delete</a>
                             {% endif %}

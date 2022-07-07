@@ -58,6 +58,7 @@ class PostDetail(View):
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
+            comment.created_by = request.user
             comment.save()
             messages.success(
                 request,
