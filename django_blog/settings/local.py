@@ -1,8 +1,9 @@
+import os
 from .base import *
 if os.path.isfile('env.py'):
     import env
 
-SECRET_KEY = 'ifoehwfgqingqojg5348423589hfbjnsd'
+SECRET_KEY = os.environ.get('SECRET_KEY_LOCAL')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 

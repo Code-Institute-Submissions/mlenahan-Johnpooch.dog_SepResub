@@ -1,13 +1,10 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse, reverse_lazy
 from django.views import generic, View
 from django.views.generic.edit import DeleteView, UpdateView
 from .models import Post, SiteSettings, Comment
 from .forms import CommentForm
-
-
 
 
 class PostList(generic.ListView):
@@ -82,8 +79,9 @@ class PostDetail(View):
 class CommentDeleteView(DeleteView):
     model = Comment
 
-    def get_success_url(self, **kwargs):         
-        return reverse_lazy('post_detail', kwargs={'slug': self.object.post.slug})
+    def get_success_url(self, **kwargs):
+        return reverse_lazy(
+            'post_detail', kwargs={'slug': self.object.post.slug})
 
     def get(self, request, *args, **kwargs):
         return self.post(request, *args, **kwargs)
@@ -95,8 +93,9 @@ class CommentUpdateView(UpdateView):
     fields = ['body']
     template_name = 'comment_update_form.html'
 
-    def get_success_url(self, **kwargs):         
-        return reverse_lazy('post_detail', kwargs={'slug': self.object.post.slug})
+    def get_success_url(self, **kwargs):
+        return reverse_lazy(
+            'post_detail', kwargs={'slug': self.object.post.slug})
 
     def get(self, request, *args, **kwargs):
         return self.post(request, *args, **kwargs)

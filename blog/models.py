@@ -1,5 +1,4 @@
 import re
-from django.conf import settings
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils.text import slugify
@@ -74,13 +73,15 @@ class Comment(models.Model):
     post = models.ForeignKey(
         'Post',
         on_delete=models.CASCADE,
-        related_name='comments')    
+        related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField(blank=True)
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE, default=DEFAULT_CREATED_BY_ID)
+    created_by = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        default=DEFAULT_CREATED_BY_ID)
 
     class Meta:
         ordering = ["created_at"]

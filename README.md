@@ -104,6 +104,10 @@ I also used an Iteration Board to help with the planning of this project. That c
 
     - Once the comment has been approved, it will be visible under the post on which it was posted.
 
+    ![image](media/readme_screenshots/update-delete.png)
+
+    - A registered user can delete or update the comment they have posted. Only the creater of the comment can delete or update their comment.
+
 - __Custom gist and code snippets__
 
     ![image](media/readme_screenshots/gist.png)

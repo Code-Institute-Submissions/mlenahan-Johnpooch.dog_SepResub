@@ -130,6 +130,10 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
             ![image](media/testing_screenshots/testing_user_stories/user-story-comment-feedback.png)
 
+            - A registered user has the ability to update and delete a comment they have posted
+
+            ![image](media/readme_screenshots/update-delete.png)
+
             - Icons with links to the authors GitHub and LinkedIn are present in the footer of the site and above each individual post allowing for the user to easily follow the author on these platforms
 
             ![image](media/testing_screenshots/testing_user_stories/user-story-socials.png)
