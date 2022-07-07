@@ -11,10 +11,15 @@ The W3C Markup Validator and W3C CSS Validator were used to validate every page 
 
     ![image](media/testing_screenshots/index_validation.png)
 
-    - post_detail.html
+    - Testing RTK Query with Jest
        * No errors found.
 
     ![image](media/testing_screenshots/post_detail_validation.png)
+    
+    - An Incremental Approach to Clean React-Redux Development
+        * This error seems to be caused by an image thats embeded in the Django Summernote editor and at the moment of writing this, I am unsure how to add alt tags to images that are embeded in the Django Summernote editor.
+
+    ![image](media/testing_screenshots/incremental-approach-react-redux-html-validation.png)
 
 -   ## [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
     
